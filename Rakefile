@@ -7,7 +7,7 @@ rescue LoadError
   end
 end
 
-task :travis do
+task :travis => :default do
   ["rake jasmine:ci"].each do |cmd|
     puts "Starting to run #{cmd}..."
     system("export DISPLAY=:99.0 && bundle exec #{cmd}")
