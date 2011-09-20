@@ -15,4 +15,4 @@ task :travis do
   end
 end
 
-task :default => ':travis'
+task :default => 'travis'
