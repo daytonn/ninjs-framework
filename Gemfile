@@ -1,3 +1,6 @@
 source :rubygems
 
-gem "jasmine"
+group :development do
+  gem "jasmine"
+  gem "rake"
+end
