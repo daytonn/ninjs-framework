@@ -1,6 +1,6 @@
 source :rubygems
 
 group :development do
-  gem "jasmine"
   gem "rake"
+  gem "jasmine"
 end
