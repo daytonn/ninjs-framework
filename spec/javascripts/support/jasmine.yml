@@ -11,9 +11,9 @@
 #   - dist/**/*.js
 #
 src_files:
-    - core/*.js
-    - extensions/*.js
-    - utilities/*.js
+    - lib/core/*.js
+    - lib/extensions/*.js
+    - lib/utilities/*.js
 
 # stylesheets
 #

@@ -18,4 +18,5 @@ describe("NinjsApplication", function() {
   	app.add_module('mymod');
     expect(is_typeof(NinjsModule, app.mymod)).toBeTruthy();
   });
+
 });
