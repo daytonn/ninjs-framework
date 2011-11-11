@@ -109,8 +109,13 @@ describe NinjsFramework do
     end
 
     it 'should update an application' do
+      FileUtils.cp "#{FIXTURES}/test.module.js", "#{TMP_DIR}/modules"
+      FileUtils.cp "#{FIXTURES}/test.elements.js", "#{TMP_DIR}/elements"
+      FileUtils.cp "#{FIXTURES}/test.model.js", "#{TMP_DIR}/models"
       suppress_output { @project.update }
       "#{TMP_DIR}/application/myapp.js".should be_same_file_as "#{FIXTURES}/myapp.js"
+      File.exists?("#{TMP_DIR}/application/test.js").should be_true
+      "#{TMP_DIR}/application/test.js".should be_same_file_as "#{FIXTURES}/test.js"
     end
   end
 end

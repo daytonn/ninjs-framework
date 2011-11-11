@@ -1,0 +1,3 @@
+  m.elements({
+    test: $('.foo');
+  });
