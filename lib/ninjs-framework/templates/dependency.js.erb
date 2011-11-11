@@ -1,0 +1,3 @@
+/*---------- Ninjs dependency <%= dependency %> ----------*/
+<%= "//= require #{dependency}" if is_repo %>
+<%= "//= require \"#{dependency}\"" unless is_repo %>

@@ -1,0 +1,3 @@
+/*---------- Ninjs autoload <%= auto_file %> ----------*/
+<%= "//= require #{auto_file}" if is_repo %>
+<%= "//= require \"#{auto_file}\"" unless is_repo %>

@@ -5,7 +5,7 @@ require 'rubygems'
 require 'digest/md5'
 require 'fileutils'
 require 'rspec'
-require '/Users/daytonn/Development/ninjs/lib/ninjs.rb'
+require '/Users/dnolan/Development/ninjs/lib/ninjs.rb'
 require 'ninjs-framework'
 
 def suppress_output(&block)
@@ -38,3 +38,4 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 SPEC_DIR = File.expand_path(File.dirname(__FILE__))
 TMP_DIR = "#{SPEC_DIR}/tmp"
 FIXTURES = "#{SPEC_DIR}/fixtures"
+LIB = File.expand_path('../lib', SPEC_DIR)
